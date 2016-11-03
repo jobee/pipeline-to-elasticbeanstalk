@@ -1,5 +1,7 @@
 # Deploy to AWS ElasticBeanstalk using Bitbucket Pipelines
 
+Docker image and description how to use Bitbucket Pipelines to deploy to AWS ElasticBeanstalk applications.
+
 **Basic usage:**
 
 1.) Create an AWS ElasticBeanstalk application and environment
