@@ -27,7 +27,7 @@ aws_access_key_id = %s
 aws_secret_access_key = %s
 " $AWS_ACCESS_KEY_ID $AWS_SECRET_ACCESS_KEY > ~/.aws/config
 
-mkdir -p /opt/atlassian/pipelines/agent/build/.elasticbeanstalk
+mkdir -p .elasticbeanstalk
 printf "
 branch-defaults:
   default:
@@ -37,4 +37,4 @@ global:
   default_region: %s
   profile: eb-cli
   sc: git
-" $APPLICATION_ENV $APPLICATION_NAME $AWS_REGION > /opt/atlassian/pipelines/agent/build/.elasticbeanstalk/config.yml
+" $APPLICATION_ENV $APPLICATION_NAME $AWS_REGION > .elasticbeanstalk/config.yml
